@@ -4,221 +4,303 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow, noarchive">
-<title>Hundehege · Garten- und Landschaftsbau in Ochtrup (Entwurf)</title>
-<meta name="description" content="Unverbindlicher Gestaltungsentwurf von Leon Oßendorf für die Josef Hundehege GmbH & Co. KG. Keine offizielle Seite.">
+<title>Josef Hundehege · Garten- und Landschaftsbau in Ochtrup (Entwurf)</title>
+<meta name="description" content="Unverbindlicher Gestaltungsentwurf von Leon Oßendorf für die Josef Hundehege GmbH & Co. KG, Ochtrup. Keine offizielle Seite.">
+<meta name="theme-color" content="#0E3A2B">
+<link rel="preload" href="fonts/bricolage.woff" as="font" type="font/woff" crossorigin>
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="hide-notes">
 
-<div class="draftbar" role="note">
-  <p><strong>Unverbindlicher Entwurf</strong> von Leon Oßendorf für die Josef Hundehege GmbH &amp; Co. KG. Keine offizielle Seite, Formulare verschicken nichts. <a href="https://www.hundehege.com/">Zur aktuellen Website</a></p>
-  <button class="notes-toggle" type="button" aria-pressed="true">Entwurfsnotizen ausblenden</button>
-</div>
+<!-- Logo: nach der Vorlage von hundehege.com nachgezeichnet (Entwurf) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="logo" viewBox="0 0 154 113">
+    <g class="lg-back">
+      <circle cx="77" cy="20" r="17"/><circle cx="57" cy="30" r="14"/><circle cx="97" cy="30" r="14"/>
+      <circle cx="41" cy="46" r="14"/><circle cx="113" cy="46" r="14"/><circle cx="30" cy="66" r="12"/><circle cx="124" cy="66" r="12"/>
+      <rect x="24" y="40" width="106" height="52"/>
+    </g>
+    <g class="lg-front">
+      <circle cx="17" cy="51" r="8"/><circle cx="30" cy="47" r="9"/><circle cx="45" cy="45" r="9"/><circle cx="60" cy="44" r="9"/><circle cx="77" cy="43" r="10"/><circle cx="94" cy="44" r="9"/><circle cx="109" cy="45" r="9"/><circle cx="124" cy="47" r="9"/><circle cx="137" cy="51" r="8"/>
+      <circle cx="16" cy="84" r="7"/><circle cx="31" cy="87" r="7"/><circle cx="46" cy="88" r="7"/><circle cx="62" cy="88" r="7"/><circle cx="77" cy="89" r="7"/><circle cx="92" cy="88" r="7"/><circle cx="108" cy="88" r="7"/><circle cx="123" cy="87" r="7"/><circle cx="138" cy="84" r="7"/>
+      <rect x="9" y="50" width="136" height="36" rx="6"/>
+    </g>
+    <text class="lg-josef" x="77" y="57" text-anchor="middle">JOSEF</text>
+    <text class="lg-name" x="77" y="81" text-anchor="middle" textLength="128" lengthAdjust="spacingAndGlyphs">HUNDEHEGE</text>
+    <text class="lg-gmbh" x="77" y="108" text-anchor="middle">GmbH &amp; Co. KG</text>
+  </symbol>
+</svg>
 
-<header class="top">
-  <a class="brand" href="#start" aria-label="Hundehege, zum Seitenanfang">
-    <span class="brand-name">Hundehege</span>
-    <span class="brand-sub">Garten- und Landschaftsbau · seit 1972</span>
+<a class="skip" href="#leistungen">Zum Inhalt springen</a>
+
+<header class="top" id="top">
+  <a class="brand" href="#top" aria-label="Josef Hundehege GmbH &amp; Co. KG, zum Seitenanfang">
+    <svg class="brand-logo" role="img" aria-hidden="true"><use href="#logo"/></svg>
   </a>
-  <nav class="nav" aria-label="Hauptnavigation">
-    <a href="#lv">Leistungen</a>
+  <nav class="nav" id="nav" aria-label="Hauptnavigation">
+    <a href="#leistungen">Leistungen</a>
     <a href="#projekte">Projekte</a>
+    <a href="#unternehmen">Unternehmen</a>
     <a href="#ausbildung">Ausbildung</a>
-    <a href="#geschichte">Unternehmen</a>
+    <a href="#kontakt" class="nav-cta">Projekt besprechen</a>
   </nav>
-  <a class="btn btn-small" href="#anfrage">Projekt anfragen</a>
+  <a class="tel-top" href="tel:+4925533630">02553 3630</a>
+  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav"><span class="menu-lines" aria-hidden="true"></span>Menü</button>
 </header>
 
-<main id="start">
+<main>
 
 <!-- HERO -->
-<section class="hero">
-  <div class="hero-text">
-    <p class="kicker">Ochtrup · Münsterland</p>
-    <h1>Grün bauen.<br>Seit 1972.</h1>
-    <p class="lead">Gärten, Parkplätze, Spielplätze und Wege – geplant und gebaut von einem Betrieb, für Privatleute, Architekten und öffentliche Auftraggeber.</p>
+<section class="hero" aria-labelledby="hero-title">
+  <picture class="hero-bg">
+    <source media="(max-width: 700px)" type="image/webp" srcset="img/hero/mauer-p-720.webp 720w, img/hero/mauer-p-1086.webp 1086w" sizes="100vw">
+    <source media="(max-width: 700px)" srcset="img/hero/mauer-p-720.jpg 720w, img/hero/mauer-p-1086.jpg 1086w" sizes="100vw">
+    <source type="image/webp" srcset="img/hero/mauer-960.webp 960w, img/hero/mauer-1600.webp 1600w" sizes="100vw">
+    <img src="img/hero/mauer-1600.jpg" srcset="img/hero/mauer-960.jpg 960w, img/hero/mauer-1600.jpg 1600w" sizes="100vw" width="1600" height="900" fetchpriority="high" alt="Natursteinmauer mit Sandsteinabdeckung entlang eines gepflasterten Weges, dahinter Rasen und Beete">
+  </picture>
+  <div class="hero-copy">
+    <p class="hero-kicker">Garten- und Landschaftsbau · Ochtrup</p>
+    <h1 id="hero-title">Außenanlagen,<br>die Bestand haben.</h1>
+    <p class="hero-sub">Seit 1972. Für private, gewerbliche und öffentliche Auftraggeber.</p>
     <div class="hero-cta">
-      <a class="btn" href="#anfrage">Projekt anfragen</a>
-      <a class="btn btn-signal" href="#ausbildung">6 Ausbildungsplätze frei</a>
+      <a class="btn btn-light" href="#leistungen">Projekte entdecken</a>
+      <a class="btn btn-line-light" href="#kontakt">Projekt besprechen</a>
     </div>
   </div>
-  <figure class="hero-img">
-    <img src="img/teichbau5.jpg" alt="Gepflasterter Steg zwischen zwei runden Wasserbecken in einer neu angelegten Außenanlage" width="800" height="600">
-  </figure>
-  <aside class="bauschild" aria-label="Kurzprofil">
-    <p class="bs-head">Bauschild</p>
-    <dl>
-      <div><dt>Ausführung</dt><dd>Josef Hundehege GmbH &amp; Co. KG</dd></div>
-      <div><dt>Gegründet</dt><dd>1972 in Ochtrup</dd></div>
-      <div><dt>Team</dt><dd>20 Angestellte <span class="note-inline">Stand?</span></dd></div>
-      <div><dt>Auszeichnung</dt><dd>BUGA 1997: 1× Gold, 3× Silber, 2× Bronze</dd></div>
-      <div><dt>Gebiet</dt><dd>Münsterland und Ruhrgebiet</dd></div>
-    </dl>
-  </aside>
 </section>
 
-<p class="note wide"><b>Entwurfsnotiz:</b> Alle Angaben stammen von hundehege.com. Die Mitarbeiterzahl steht dort ohne Datum – vor dem Livegang mit Ihnen abgleichen.</p>
+<div class="entries">
+  <a class="entry" href="#leistungen" data-area="wasser">
+    <span class="entry-img">
+      <picture>
+        <source media="(max-width: 700px)" type="image/webp" srcset="img/hero/wasser-p-720.webp">
+        <source media="(max-width: 700px)" srcset="img/hero/wasser-p-720.jpg">
+        <source type="image/webp" srcset="img/hero/wasser-720.webp">
+        <img src="img/hero/wasser-720.jpg" width="720" height="540" alt="Wasserauslauf aus Stein über einem Wasserbecken">
+      </picture>
+    </span>
+    <span class="entry-text">
+      <span class="entry-title">Wasser im Garten</span>
+      <span class="entry-go">Teichbau ansehen<svg aria-hidden="true" viewBox="0 0 20 20"><path d="M7 4l6 6-6 6"/></svg></span>
+    </span>
+  </a>
+  <a class="entry" href="#leistungen" data-area="spiel">
+    <span class="entry-img">
+      <picture>
+        <source media="(max-width: 700px)" type="image/webp" srcset="img/hero/spiel-p-720.webp">
+        <source media="(max-width: 700px)" srcset="img/hero/spiel-p-720.jpg">
+        <source type="image/webp" srcset="img/hero/spiel-720.webp">
+        <img src="img/hero/spiel-720.jpg" width="720" height="540" alt="Spielturm aus Holz mit Rutsche und Kletternetz auf einer Sandfläche">
+      </picture>
+    </span>
+    <span class="entry-text">
+      <span class="entry-title">Spielräume gestalten</span>
+      <span class="entry-go">Spielplätze ansehen<svg aria-hidden="true" viewBox="0 0 20 20"><path d="M7 4l6 6-6 6"/></svg></span>
+    </span>
+  </a>
+  <p class="entries-more">Außerdem: <a href="#leistungen" data-area="stein">Naturstein</a> · <a href="#leistungen" data-area="stein">Pflaster</a> · <a href="#leistungen" data-area="garten">Grünanlagen</a> · <a href="#leistungen" data-area="erde">Erd- und Tiefbau</a></p>
+</div>
 
-<!-- ZIELGRUPPEN -->
-<section class="who">
-  <h2 class="sr">Für wen wir bauen</h2>
-  <article>
-    <img src="img/3951-s.jpg" alt="Natursteinmauer mit Sandsteinabdeckung an einem Gartenweg" loading="lazy" width="480" height="360">
-    <h3>Privatgärten</h3>
-    <p>Natursteinmauern, Pflaster, Teiche, Zäune und Pergolen. Von der Planung bis zum letzten Pflanzloch.</p>
-  </article>
-  <article>
-    <img src="img/pflasterarbeiten6-s.jpg" alt="Neu gepflasterter Parkplatz vor einem Gebäude mit Behindertenparkplatz-Schild" loading="lazy" width="480" height="320">
-    <h3>Gewerbe &amp; Wohnungsbau</h3>
-    <p>Parkplätze, Zufahrten, Außenanlagen und Erdarbeiten – mit eigenem Maschinenpark.</p>
-  </article>
-  <article>
-    <img src="img/spielplatz1-s.jpg" alt="Holzspielturm mit Rutsche auf einer Sandfläche" loading="lazy" width="480" height="360">
-    <h3>Öffentliche Hand &amp; Planer</h3>
-    <p>Spielplätze, Sportstätten, Wege und Tiefbau – mit Erfahrung bei Aufträgen der öffentlichen Hand.</p>
-  </article>
-</section>
+<p class="note note-wide"><b>Entwurfsnotiz:</b> Die drei großen Fotos stammen von hundehege.com und wurden für den Entwurf digital vergrößert. Für die fertige Seite empfehlen wir aktuelle Originalaufnahmen in voller Auflösung.</p>
 
-<!-- LEISTUNGSVERZEICHNIS -->
-<section class="lv" id="lv">
-  <div class="sec-head">
-    <p class="kicker">Leistungsverzeichnis</p>
-    <h2>Zehn Positionen.<br>Ein Ansprechpartner.</h2>
-    <p>Ob Garten oder Parkplatz, Spielplatz oder Gehweg: Sie beauftragen einen Betrieb, der Erd-, Tief- und Pflasterarbeiten genauso selbst ausführt wie die Bepflanzung.</p>
+<!-- LEISTUNGEN -->
+<section class="leistungen" id="leistungen" aria-labelledby="lz-title">
+  <div class="lz-head">
+    <h2 id="lz-title">Vom ersten Erdaushub bis zur fertigen Außenanlage.</h2>
+    <p>Alle Arbeiten aus einer Hand, in fünf Bereichen. Jeder Bereich zeigt Fotos aus ausgeführten Projekten.</p>
   </div>
-  <ol class="lv-list">
-    <li><span class="pos">Pos. 01</span><span class="lv-name">Gartengestaltung und Grünanlagen</span><a class="lv-link" href="#projekte" data-filter="naturstein">Fotos</a></li>
-    <li><span class="pos">Pos. 02</span><span class="lv-name">Pflasterarbeiten, auch mit Naturstein</span><a class="lv-link" href="#projekte" data-filter="pflaster">Fotos</a></li>
-    <li><span class="pos">Pos. 03</span><span class="lv-name">Rasensaat und Bepflanzung</span></li>
-    <li><span class="pos">Pos. 04</span><span class="lv-name">Erdarbeiten</span><a class="lv-link" href="#projekte" data-filter="erde">Fotos</a></li>
-    <li><span class="pos">Pos. 05</span><span class="lv-name">Spielplätze</span><a class="lv-link" href="#projekte" data-filter="spiel">Fotos</a></li>
-    <li><span class="pos">Pos. 06</span><span class="lv-name">Teichbau</span><a class="lv-link" href="#projekte" data-filter="wasser">Fotos</a></li>
-    <li><span class="pos">Pos. 07</span><span class="lv-name">Sportstättenbau</span></li>
-    <li><span class="pos">Pos. 08</span><span class="lv-name">Zäune und Pergolen</span><a class="lv-link" href="#projekte" data-filter="zaun">Fotos</a></li>
-    <li><span class="pos">Pos. 09</span><span class="lv-name">Parkplätze</span><a class="lv-link" href="#projekte" data-filter="pflaster">Fotos</a></li>
-    <li><span class="pos">Pos. 10</span><span class="lv-name">Tiefbau</span><a class="lv-link" href="#projekte" data-filter="tief">Fotos</a></li>
-  </ol>
-</section>
 
-<div class="pave" aria-hidden="true"></div>
+  <div class="lz">
+    <ul class="lz-list">
+      <li class="lz-item" data-area="stein">
+        <button class="lz-btn" type="button" aria-expanded="false" aria-controls="p-stein">
+          <span class="lz-thumb" aria-hidden="true"><img src="img/hero/mauer-960.jpg" alt="" loading="lazy"></span>
+          <span class="lz-words"><span class="lz-title">Naturstein &amp; Pflaster</span><span class="lz-short">Mauern, Wege, Terrassen und Parkplätze.</span></span>
+          <span class="lz-icon" aria-hidden="true"></span>
+        </button>
+        <div class="lz-panel" id="p-stein"><div class="lz-inner">
+          <div class="lz-media"></div>
+          <ul class="lz-tags"><li>Pflasterarbeiten, auch mit Naturstein</li><li>Natursteinmauern</li><li>Parkplätze</li></ul>
+          <div class="lz-actions"><a class="btn btn-small" href="#projekte" data-filter="stein">Projektbilder ansehen</a><a class="lz-talk" href="#kontakt" data-topic="Naturstein &amp; Pflaster">Projekt besprechen</a></div>
+        </div></div>
+      </li>
+      <li class="lz-item" data-area="garten">
+        <button class="lz-btn" type="button" aria-expanded="false" aria-controls="p-garten">
+          <span class="lz-thumb" aria-hidden="true"><img src="img/zaeune2-s.jpg" alt="" loading="lazy"></span>
+          <span class="lz-words"><span class="lz-title">Gärten &amp; Grünanlagen</span><span class="lz-short">Planung, Bepflanzung, Zäune und Pergolen.</span></span>
+          <span class="lz-icon" aria-hidden="true"></span>
+        </button>
+        <div class="lz-panel" id="p-garten"><div class="lz-inner">
+          <div class="lz-media"></div>
+          <ul class="lz-tags"><li>Gartengestaltung und Grünanlagen</li><li>Rasensaat und Bepflanzung</li><li>Zäune und Pergolen</li></ul>
+          <div class="lz-actions"><a class="btn btn-small" href="#projekte" data-filter="garten">Projektbilder ansehen</a><a class="lz-talk" href="#kontakt" data-topic="Gärten &amp; Grünanlagen">Projekt besprechen</a></div>
+        </div></div>
+      </li>
+      <li class="lz-item" data-area="wasser">
+        <button class="lz-btn" type="button" aria-expanded="false" aria-controls="p-wasser">
+          <span class="lz-thumb" aria-hidden="true"><img src="img/hero/wasser-720.jpg" alt="" loading="lazy"></span>
+          <span class="lz-words"><span class="lz-title">Wasser im Garten</span><span class="lz-short">Teiche und Wasserbecken als Mittelpunkt einer Anlage.</span></span>
+          <span class="lz-icon" aria-hidden="true"></span>
+        </button>
+        <div class="lz-panel" id="p-wasser"><div class="lz-inner">
+          <div class="lz-media"></div>
+          <ul class="lz-tags"><li>Teichbau</li><li>Wasserbecken</li></ul>
+          <div class="lz-actions"><a class="btn btn-small" href="#projekte" data-filter="wasser">Projektbilder ansehen</a><a class="lz-talk" href="#kontakt" data-topic="Wasser im Garten">Projekt besprechen</a></div>
+        </div></div>
+      </li>
+      <li class="lz-item" data-area="spiel">
+        <button class="lz-btn" type="button" aria-expanded="false" aria-controls="p-spiel">
+          <span class="lz-thumb" aria-hidden="true"><img src="img/hero/spiel-720.jpg" alt="" loading="lazy"></span>
+          <span class="lz-words"><span class="lz-title">Spiel &amp; Sport</span><span class="lz-short">Spielplätze und Sportstätten, von der Planung bis zum Bau.</span></span>
+          <span class="lz-icon" aria-hidden="true"></span>
+        </button>
+        <div class="lz-panel" id="p-spiel"><div class="lz-inner">
+          <div class="lz-media"></div>
+          <ul class="lz-tags"><li>Spielplätze</li><li>Sportstättenbau</li></ul>
+          <div class="lz-actions"><a class="btn btn-small" href="#projekte" data-filter="spiel">Projektbilder ansehen</a><a class="lz-talk" href="#kontakt" data-topic="Spiel &amp; Sport">Projekt besprechen</a></div>
+        </div></div>
+      </li>
+      <li class="lz-item" data-area="erde">
+        <button class="lz-btn" type="button" aria-expanded="false" aria-controls="p-erde">
+          <span class="lz-thumb" aria-hidden="true"><img src="img/erdarbeiten1-s.jpg" alt="" loading="lazy"></span>
+          <span class="lz-words"><span class="lz-title">Erd- &amp; Tiefbau</span><span class="lz-short">Aushub, Erdbewegung und Schachtbau mit eigenen Maschinen.</span></span>
+          <span class="lz-icon" aria-hidden="true"></span>
+        </button>
+        <div class="lz-panel" id="p-erde"><div class="lz-inner">
+          <div class="lz-media"></div>
+          <ul class="lz-tags"><li>Erdarbeiten</li><li>Tiefbau</li></ul>
+          <div class="lz-actions"><a class="btn btn-small" href="#projekte" data-filter="erde">Projektbilder ansehen</a><a class="lz-talk" href="#kontakt" data-topic="Erd- &amp; Tiefbau">Projekt besprechen</a></div>
+        </div></div>
+      </li>
+    </ul>
+
+    <div class="lz-stage" aria-live="polite">
+      <div class="stage-frame">
+        <img class="stage-img is-on" src="img/hero/mauer-1600.jpg" alt="Natursteinmauer mit Sandsteinabdeckung entlang eines gepflasterten Weges" loading="lazy">
+        <img class="stage-img" alt="" aria-hidden="true">
+        <p class="stage-area"></p>
+      </div>
+      <div class="stage-bar">
+        <div class="stage-thumbs" role="group" aria-label="Fotos aus diesem Bereich"></div>
+        <p class="stage-cap"></p>
+      </div>
+    </div>
+  </div>
+  <p class="lz-hint" aria-hidden="true"><span class="hint-fine">Fahren Sie über einen Bereich oder klicken Sie ihn an.</span><span class="hint-touch">Tippen Sie auf einen Bereich, um ihn zu öffnen.</span></p>
+  <p class="note"><b>Entwurfsnotiz:</b> Die zehn Leistungen von hundehege.com sind hier in fünf Bereiche gegliedert. Gliederung und Kurztexte stimmen wir mit Ihnen ab.</p>
+</section>
 
 <!-- PROJEKTE -->
-<section class="projekte" id="projekte">
-  <div class="sec-head row">
+<section class="projekte" id="projekte" aria-labelledby="pj-title">
+  <div class="pj-head">
     <div>
-      <p class="kicker">Projekte</p>
-      <h2>Gebaut, nicht gerendert.</h2>
+      <h2 id="pj-title">Ausgeführte Arbeiten</h2>
+      <p>Fotos aus Projekten der Josef Hundehege GmbH, sortiert nach Leistungsbereich.</p>
     </div>
-    <div class="filters" role="group" aria-label="Projekte filtern">
-      <button type="button" class="on" data-f="alle">Alle</button>
-      <button type="button" data-f="naturstein">Naturstein</button>
-      <button type="button" data-f="pflaster">Pflaster</button>
-      <button type="button" data-f="wasser">Wasser</button>
-      <button type="button" data-f="spiel">Spielplätze</button>
-      <button type="button" data-f="zaun">Zäune &amp; Pergolen</button>
-      <button type="button" data-f="erde">Erdarbeiten</button>
-      <button type="button" data-f="tief">Tiefbau</button>
+    <div class="filters" role="group" aria-label="Fotos nach Bereich filtern">
+      <button type="button" class="on" data-f="alle" aria-pressed="true">Alle</button>
+      <button type="button" data-f="stein" aria-pressed="false">Naturstein &amp; Pflaster</button>
+      <button type="button" data-f="garten" aria-pressed="false">Gärten</button>
+      <button type="button" data-f="wasser" aria-pressed="false">Wasser</button>
+      <button type="button" data-f="spiel" aria-pressed="false">Spiel &amp; Sport</button>
+      <button type="button" data-f="erde" aria-pressed="false">Erd- &amp; Tiefbau</button>
     </div>
   </div>
   <div class="grid" id="grid"></div>
-  <p class="note"><b>Entwurfsnotiz:</b> Heute liegen die Fotos auf sieben Unterseiten ohne Ort, Jahr oder Auftraggeber-Typ. Mit je einem Satz pro Projekt („Außenanlage Wohnquartier, Ochtrup, 2.400 m²") werden daraus Referenzen, die Architekten und Ausschreibende suchen.</p>
+  <div class="more-photos"><button class="btn btn-line" type="button" id="all-photos">Alle Fotos zeigen</button></div>
+  <p class="note"><b>Entwurfsnotiz:</b> Auf hundehege.com liegen diese Fotos heute auf sieben Unterseiten, ohne Ort und Jahr. Ein Satz pro Projekt, etwa Objektart, Ort und Fläche, macht daraus Referenzen, nach denen Architekten und Ausschreibende suchen.</p>
+</section>
+
+<!-- UNTERNEHMEN -->
+<section class="unternehmen" id="unternehmen" aria-labelledby="un-title">
+  <div class="un-text">
+    <h2 id="un-title">Mit der Schubkarre zur Goldmedaille.</h2>
+    <p class="un-lead">Ein Mann, eine Schubkarre, ein VW Käfer und ein Spaten: So fing es im August 1972 an, an der alten Wassermühle gegenüber von Haus Welbergen in Ochtrup.</p>
+    <p>Ein Jahr später stellte Josef Hundehege den ersten Mitarbeiter ein, 1976 zog der Betrieb an den heutigen Standort am Bökerhook. Aufträge kamen bald aus dem ganzen Münsterland und dem Ruhrgebiet. Heute ist Hundehege ein mittelständischer Ausbildungsbetrieb mit rund 20 Angestellten, geführt von Marcus Hundehege.</p>
+    <ol class="years">
+      <li><b>1972</b><span>Gründung in Ochtrup</span></li>
+      <li><b>1976</b><span>Umzug an den Bökerhook</span></li>
+      <li><b>1997</b><span>Medaillen auf der Bundesgartenschau</span></li>
+    </ol>
+  </div>
+  <div class="un-side">
+    <figure class="un-img"><img src="img/erdarbeiten5.jpg" alt="Lkw und Transporter mit Hundehege-Logo auf einer Baustelle" loading="lazy" width="900" height="600"></figure>
+    <div class="buga">
+      <p class="buga-head">Bundesgartenschau Gelsenkirchen 1997</p>
+      <p class="buga-medals"><span><b>1</b> Gold</span><span><b>3</b> Silber</span><span><b>2</b> Bronze</span></p>
+    </div>
+  </div>
+  <p class="note note-span"><b>Entwurfsnotiz:</b> Die Zahl „rund 20 Angestellte" steht ohne Datum auf hundehege.com, bitte bestätigen. Ein Foto aus den Anfangsjahren neben einem aktuellen Teamfoto würde diesen Abschnitt stark machen. Der letzte Beitrag unter „Aktuell" ist vom April 2011.</p>
 </section>
 
 <!-- AUSBILDUNG -->
-<section class="ausbildung" id="ausbildung">
+<section class="ausbildung" id="ausbildung" aria-labelledby="aus-title">
   <div class="aus-text">
-    <p class="kicker">Ausbildung · ab sofort</p>
-    <h2>Draußen arbeiten.<br>Abends sehen, was man geschafft hat.</h2>
-    <p class="lead">Wir bilden zum Landschaftsgärtner / Gärtner (m/w/d) aus. Im familiengeführten Betrieb lernst du alle Bereiche des Garten- und Landschaftsbaus – vom Pflaster bis zur Pflanzung.</p>
-    <ul class="facts">
-      <li><b>6</b><span>Ausbildungs­plätze</span></li>
-      <li><b>2–3</b><span>Jahre, dual</span></li>
-      <li><b>Tarif</b><span>Vergütung nach Tarifrecht</span></li>
-    </ul>
-    <p>Moderner Maschinen- und Gerätepark, gutes Arbeitsklima und ein Betrieb, der seit 1972 in Ochtrup baut.</p>
-    <p class="note"><b>Entwurfsnotiz:</b> Diese Stellen stehen heute auf ausbildung.de und aubi-plus.de, aber nicht auf hundehege.com. Wer dort klickt und Ihre Seite aufruft, findet keinen Hinweis auf die Ausbildung.</p>
+    <h2 id="aus-title">Ausbildung zum Landschaftsgärtner (m/w/d)</h2>
+    <p class="aus-lead">Draußen arbeiten und abends sehen, was man geschafft hat. Bei uns lernst du alle Bereiche des Garten- und Landschaftsbaus, vom Pflaster bis zur Pflanzung.</p>
+    <dl class="facts">
+      <div><dt>Plätze</dt><dd>6</dd></div>
+      <div><dt>Dauer</dt><dd>2–3 Jahre</dd></div>
+      <div><dt>Vergütung</dt><dd>nach Tarif</dd></div>
+    </dl>
+    <p>Familiengeführter Betrieb, moderner Maschinen- und Gerätepark, gutes Arbeitsklima. Start ab sofort oder nach Absprache.</p>
+    <p class="note"><b>Entwurfsnotiz:</b> Diese sechs Plätze stehen heute auf ausbildung.de und aubi-plus.de, aber nicht auf hundehege.com. Wer dort klickt und Ihre Seite aufruft, findet keinen Hinweis darauf.</p>
   </div>
-  <div class="aus-side">
-    <figure><img src="img/erdarbeiten5.jpg" alt="Zwei Firmenfahrzeuge von Hundehege auf einer Baustelle" loading="lazy" width="900" height="600"></figure>
-    <form class="form form-dark" data-kind="bewerbung" novalidate>
-      <p class="form-title">Bewerben in zwei Minuten</p>
-      <p class="form-hint">Kein Anschreiben nötig. Wir rufen dich zurück.</p>
-      <label>Vorname und Name<input type="text" name="name" autocomplete="name"></label>
-      <label>Handy (auch WhatsApp)<input type="tel" name="tel" autocomplete="tel"></label>
-      <label>Schulabschluss
-        <select name="abschluss"><option>Hauptschulabschluss</option><option>Klasse 10 / Realschule</option><option>Fachabitur / Abitur</option><option>Noch in der Schule</option></select>
-      </label>
-      <label class="check"><input type="checkbox" name="praktikum"> Ich möchte erst ein Praktikum machen</label>
-      <button class="btn btn-signal" type="submit">Rückruf anfordern</button>
-      <p class="form-status" role="status" aria-live="polite"></p>
-    </form>
-  </div>
+  <form class="form form-dark" data-kind="bewerbung" novalidate>
+    <p class="form-title">In zwei Minuten bewerben</p>
+    <p class="form-hint">Kein Anschreiben nötig. Wir rufen dich zurück.</p>
+    <label>Vorname und Name<input type="text" name="name" autocomplete="name"></label>
+    <label>Handy (auch WhatsApp)<input type="tel" name="tel" autocomplete="tel"></label>
+    <label>Schulabschluss
+      <select name="abschluss"><option>Hauptschulabschluss</option><option>Klasse 10 / Realschule</option><option>Fachabitur / Abitur</option><option>Noch in der Schule</option></select>
+    </label>
+    <label class="check"><input type="checkbox" name="praktikum"> Ich möchte zuerst ein Praktikum machen</label>
+    <button class="btn btn-light" type="submit">Rückruf anfordern</button>
+    <p class="form-status" role="status" aria-live="polite"></p>
+  </form>
 </section>
 
-<!-- GESCHICHTE -->
-<section class="geschichte" id="geschichte">
-  <div class="sec-head">
-    <p class="kicker">Unternehmen</p>
-    <h2>Mit der Schubkarre zur Goldmedaille.</h2>
-  </div>
-  <ol class="timeline">
-    <li><span class="yr">1972</span><p>Ein Mann, eine Schubkarre, ein VW Käfer und ein Spaten. Josef Hundehege fängt an der alten Wassermühle gegenüber von Haus Welbergen an.</p></li>
-    <li><span class="yr">1973</span><p>Der erste Angestellte. Weitere folgen, es wird eng.</p></li>
-    <li><span class="yr">1976</span><p>Umzug an den heutigen Standort, Bökerhook 12 in Ochtrup. Aufträge im ganzen Münsterland und im Ruhrgebiet.</p></li>
-    <li><span class="yr">1997</span><p>Bundesgartenschau Gelsenkirchen: eine Goldmedaille, drei Silber- und zwei Bronzemedaillen.</p></li>
-    <li><span class="yr">2011</span><p>Ein CAT 315D kommt dazu: 17 Tonnen, 140 PS, zentimetergenau gesteuert. „Ein Grobian mit Feingefühl."</p></li>
-    <li><span class="yr">Heute</span><p>Ein mittelständischer Ausbildungsbetrieb. Geschäftsführer: Marcus Hundehege.</p></li>
-  </ol>
-  <p class="note"><b>Entwurfsnotiz:</b> Der letzte Beitrag unter „Aktuell" ist vom 05.04.2011. Ein neuerer Meilenstein, ein Teamfoto oder ein aktuelles Projekt würde zeigen, dass der Betrieb heute so aktiv ist wie 1997.</p>
-</section>
-
-<!-- ANFRAGE -->
-<section class="anfrage" id="anfrage">
-  <div class="anf-text">
-    <p class="kicker">Projekt anfragen</p>
-    <h2>Erzählen Sie uns kurz vom Grundstück.</h2>
-    <p>Mit Objektart, Leistung und Zeitraum wissen wir sofort, worum es geht, und melden uns mit dem passenden Ansprechpartner.</p>
-    <address>
-      <strong>Josef Hundehege GmbH &amp; Co. KG</strong><br>
-      Bökerhook 12, 48607 Ochtrup<br>
-      <a href="tel:+4925533630">02553 3630</a><br>
-      mail@hundehege.com
-    </address>
+<!-- KONTAKT -->
+<section class="kontakt" id="kontakt" aria-labelledby="ko-title">
+  <div class="ko-text">
+    <h2 id="ko-title">Was haben Sie vor?</h2>
+    <p class="ko-lead">Beschreiben Sie kurz Ihr Projekt. Wir melden uns und besprechen mit Ihnen die nächsten Schritte.</p>
+    <a class="ko-tel" href="tel:+4925533630"><span>Direkt anrufen</span>02553 3630</a>
+    <p class="ko-plan">Für Architekten, Planer und Ausschreibungen: Unterlagen gern per E-Mail an <a href="mailto:mail@hundehege.com">mail@hundehege.com</a></p>
+    <ol class="steps">
+      <li>Sie schildern kurz Ihr Vorhaben.</li>
+      <li>Wir melden uns und vereinbaren einen Termin vor Ort.</li>
+      <li>Sie erhalten ein Angebot.</li>
+    </ol>
+    <p class="note"><b>Entwurfsnotiz:</b> Den Ablauf stimmen wir mit Ihnen ab.</p>
   </div>
   <form class="form" data-kind="anfrage" novalidate>
-    <fieldset>
-      <legend>Ich bin</legend>
-      <div class="chips">
-        <label><input type="radio" name="typ" checked><span>Privat</span></label>
-        <label><input type="radio" name="typ"><span>Gewerbe / Wohnungsbau</span></label>
-        <label><input type="radio" name="typ"><span>Architekt / Planer</span></label>
-        <label><input type="radio" name="typ"><span>Öffentlicher Auftraggeber</span></label>
-      </div>
-    </fieldset>
-    <fieldset>
-      <legend>Es geht um</legend>
-      <div class="chips">
-        <label><input type="checkbox"><span>Garten</span></label>
-        <label><input type="checkbox"><span>Pflaster</span></label>
-        <label><input type="checkbox"><span>Naturstein</span></label>
-        <label><input type="checkbox"><span>Teich</span></label>
-        <label><input type="checkbox"><span>Zaun / Pergola</span></label>
-        <label><input type="checkbox"><span>Spielplatz</span></label>
-        <label><input type="checkbox"><span>Parkplatz</span></label>
-        <label><input type="checkbox"><span>Erd- / Tiefbau</span></label>
-      </div>
-    </fieldset>
-    <div class="row2">
-      <label>Ort des Grundstücks<input type="text" placeholder="z. B. Ochtrup"></label>
-      <label>Wann soll es losgehen?
-        <select><option>So bald wie möglich</option><option>In 1–3 Monaten</option><option>In 3–6 Monaten</option><option>Später / Ausschreibung</option></select>
-      </label>
-    </div>
-    <div class="row2">
-      <label>Name<input type="text" autocomplete="name"></label>
-      <label>Telefon<input type="tel" autocomplete="tel"></label>
-    </div>
-    <label>Was haben Sie vor? <span class="opt">(optional)</span><textarea rows="3"></textarea></label>
+    <label>Name<input type="text" name="name" autocomplete="name"></label>
+    <label>Telefon oder E-Mail<input type="text" name="kontakt" autocomplete="email"></label>
+    <label>Ihr Projekt<textarea name="text" rows="4" placeholder="z. B. Terrasse und Gartenweg neu pflastern, etwa 60 m²"></textarea></label>
+    <details class="more" id="more">
+      <summary>Weitere Angaben <span>(freiwillig)</span></summary>
+      <fieldset>
+        <legend>Ich bin</legend>
+        <div class="chips">
+          <label><input type="radio" name="typ" value="privat"><span>Privat</span></label>
+          <label><input type="radio" name="typ" value="gewerbe"><span>Gewerbe / Wohnungsbau</span></label>
+          <label><input type="radio" name="typ" value="planer"><span>Architekt / Planer</span></label>
+          <label><input type="radio" name="typ" value="oeffentlich"><span>Öffentlicher Auftraggeber</span></label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Bereich</legend>
+        <div class="chips" id="topics">
+          <label><input type="checkbox" name="bereich" value="Naturstein &amp; Pflaster"><span>Naturstein &amp; Pflaster</span></label>
+          <label><input type="checkbox" name="bereich" value="Gärten &amp; Grünanlagen"><span>Gärten &amp; Grünanlagen</span></label>
+          <label><input type="checkbox" name="bereich" value="Wasser im Garten"><span>Wasser im Garten</span></label>
+          <label><input type="checkbox" name="bereich" value="Spiel &amp; Sport"><span>Spiel &amp; Sport</span></label>
+          <label><input type="checkbox" name="bereich" value="Erd- &amp; Tiefbau"><span>Erd- &amp; Tiefbau</span></label>
+        </div>
+      </fieldset>
+      <label>Ort des Grundstücks<input type="text" name="ort" placeholder="z. B. Ochtrup"></label>
+    </details>
     <button class="btn" type="submit">Anfrage senden</button>
     <p class="form-status" role="status" aria-live="polite"></p>
   </form>
@@ -227,14 +309,32 @@
 </main>
 
 <footer class="foot">
-  <div>
-    <p class="brand-name">Hundehege</p>
-    <p>Garten- und Landschaftsbau · Bökerhook 12 · 48607 Ochtrup · 02553 3630</p>
+  <div class="foot-brand">
+    <svg class="foot-logo" role="img" aria-label="Josef Hundehege GmbH &amp; Co. KG"><use href="#logo"/></svg>
   </div>
-  <p class="foot-draft"><b>Hinweis zum Entwurf:</b> Diese Seite ist ein unverbindlicher Gestaltungsvorschlag von Leon Oßendorf, Ochtrup, und nicht mit der Josef Hundehege GmbH &amp; Co. KG abgestimmt. Texte und Fotos stammen von hundehege.com sowie aus der öffentlichen Ausbildungsanzeige (Stand Oktober 2026). Formulare verschicken nichts.<br>Kontakt zum Entwurf: Leon Oßendorf · 01522 9679135 · leon.ossendorf@gmail.com</p>
+  <address class="foot-addr">
+    Josef Hundehege GmbH &amp; Co. KG<br>
+    Bökerhook 12, 48607 Ochtrup<br>
+    <a href="tel:+4925533630">02553 3630</a> · <a href="mailto:mail@hundehege.com">mail@hundehege.com</a>
+  </address>
+  <nav class="foot-links" aria-label="Rechtliches">
+    <a href="https://www.hundehege.com/impressum.html">Impressum</a>
+    <a href="https://www.hundehege.com/datenschutz.html">Datenschutz</a>
+  </nav>
+  <p class="foot-draft"><b>Unverbindlicher Entwurf.</b> Diese Seite ist ein Gestaltungsvorschlag von Leon Oßendorf, Ochtrup, und nicht mit der Josef Hundehege GmbH &amp; Co. KG abgestimmt. Texte und Fotos stammen von hundehege.com und aus der öffentlichen Ausbildungsanzeige (Stand Oktober 2026). Formulare verschicken nichts. Kontakt zum Entwurf: 01522 9679135 · leon.ossendorf@gmail.com</p>
 </footer>
 
-<dialog class="lightbox" id="lightbox">
+<!-- Entwurfs-Hinweis -->
+<div class="draft" id="draft">
+  <button class="draft-pill" type="button" aria-expanded="false" aria-controls="draft-panel">Entwurf</button>
+  <div class="draft-panel" id="draft-panel" hidden>
+    <p><b>Unverbindlicher Entwurf</b> von Leon Oßendorf für die Josef Hundehege GmbH &amp; Co. KG. Keine offizielle Seite, Formulare verschicken nichts.</p>
+    <p><a href="https://www.hundehege.com/">Zur aktuellen Website</a></p>
+    <button class="notes-toggle" type="button" aria-pressed="false">Entwurfsnotizen einblenden</button>
+  </div>
+</div>
+
+<dialog class="lightbox" id="lightbox" aria-label="Foto vergrößert">
   <form method="dialog"><button class="lb-close" aria-label="Schließen">×</button></form>
   <img alt="">
   <p class="lb-cap"></p>
