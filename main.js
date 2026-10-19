@@ -1,31 +1,70 @@
 // ---------- Daten: Fotos von hundehege.com (Rubrik „Referenzen") ----------
 const AREAS = {
-  stein: { name: 'Naturstein & Pflaster', photos: [
-    ['img/hero/mauer-1600.jpg', 'img/hero/mauer-960.jpg', 'Natursteinmauer mit Sandsteinabdeckung entlang eines gepflasterten Weges'],
-    ['img/pflasterarbeiten6.jpg', 'img/pflasterarbeiten6-s.jpg', 'Neu gepflasterter Parkplatz vor einem Gebäude'],
-    ['img/pflasterarbeiten1.jpg', 'img/pflasterarbeiten1-s.jpg', 'Terrasse mit Natursteinpflaster'],
-  ] },
-  garten: { name: 'Gärten & Grünanlagen', photos: [
-    ['img/zaeune2.jpg', 'img/zaeune2-s.jpg', 'Holzpergolen und Sichtschutz auf einer gepflasterten Terrasse'],
-    ['img/naturstein5.jpg', 'img/naturstein5-s.jpg', 'Baumscheibe mit Natursteinkranz und Findlingen im Rasen'],
-    ['img/zauene3.jpg', 'img/zauene3-s.jpg', 'Pergola aus Holz und Stahl am Hauseingang'],
-  ] },
-  wasser: { name: 'Wasser im Garten', photos: [
-    ['img/hero/wasser-1200.jpg', 'img/hero/wasser-720.jpg', 'Wasserauslauf aus Stein über einem Wasserbecken'],
-    ['img/teichbau4.jpg', 'img/teichbau4-s.jpg', 'Pergola, Pflasterweg und Wasserbecken in einer Außenanlage'],
-    ['img/teichbau5.jpg', 'img/teichbau5-s.jpg', 'Steg zwischen zwei runden Wasserbecken'],
-  ] },
-  spiel: { name: 'Spiel & Sport', photos: [
-    ['img/hero/spiel-1200.jpg', 'img/hero/spiel-720.jpg', 'Spielturm aus Holz mit Rutsche und Kletternetz auf einer Sandfläche'],
-    ['img/spielplatz5.jpg', 'img/spielplatz5-s.jpg', 'Sandspielbereich mit Elementen aus Rundholz'],
-    ['img/spielplatz4.jpg', 'img/spielplatz4-s.jpg', 'Spielhaus aus Holz mit Kletternetz und Leiter'],
-  ] },
-  erde: { name: 'Erd- & Tiefbau', photos: [
-    ['img/erdarbeiten1.jpg', 'img/erdarbeiten1-s.jpg', 'Bagger und Lkw beim Bodenaushub'],
-    ['img/tiefbau5.jpg', 'img/tiefbau5-s.jpg', 'Schachtring auf einer Tiefbaustelle, dahinter ein Bagger'],
-    ['img/erdarbeiten5.jpg', 'img/erdarbeiten5-s.jpg', 'Firmenfahrzeuge von Hundehege auf der Baustelle'],
-  ] },
+  stein: {
+    title: 'Naturstein & Pflaster',
+    text: 'Mauern, Wege, Terrassen und Parkplätze aus Naturstein und Pflaster.',
+    tags: ['Pflasterarbeiten, auch mit Naturstein', 'Natursteinmauern', 'Parkplätze'],
+    photos: [
+      ['img/hero/mauer-1600.jpg', 'img/hero/mauer-960.jpg', 'Natursteinmauer mit Sandsteinabdeckung entlang eines gepflasterten Weges'],
+      ['img/3952.jpg', 'img/3952-s.jpg', 'Bruchsteinmauer mit Sandsteinabdeckung'],
+      ['img/3953.jpg', 'img/3953-s.jpg', 'Mauer mit Sandsteinabdeckung am Weg'],
+      ['img/3954.jpg', 'img/3954-s.jpg', 'Natursteinmauer, Detail'],
+      ['img/naturstein6.jpg', 'img/naturstein6-s.jpg', 'Trockenmauer mit Bepflanzung'],
+      ['img/pflasterarbeiten6.jpg', 'img/pflasterarbeiten6-s.jpg', 'Neu gepflasterter Parkplatz vor einem Gebäude'],
+      ['img/pflasterarbeiten1.jpg', 'img/pflasterarbeiten1-s.jpg', 'Terrasse mit Natursteinpflaster'],
+      ['img/pflasterarbeiten2.jpg', 'img/pflasterarbeiten2-s.jpg', 'Klinkerpflaster, Detail'],
+    ],
+  },
+  garten: {
+    title: 'Gärten & Grünanlagen',
+    text: 'Gartengestaltung von der Planung bis zum letzten Pflanzloch, mit Zäunen und Pergolen.',
+    tags: ['Gartengestaltung und Grünanlagen', 'Rasensaat und Bepflanzung', 'Zäune und Pergolen'],
+    photos: [
+      ['img/zaeune2.jpg', 'img/zaeune2-s.jpg', 'Holzpergolen und Sichtschutz auf einer gepflasterten Terrasse'],
+      ['img/naturstein5.jpg', 'img/naturstein5-s.jpg', 'Baumscheibe mit Natursteinkranz und Findlingen im Rasen'],
+      ['img/zauene3.jpg', 'img/zauene3-s.jpg', 'Pergola aus Holz und Stahl am Hauseingang'],
+      ['img/zaeune1.jpg', 'img/zaeune1-s.jpg', 'Holzgeländer an einer Gartenterrasse'],
+      ['img/zauene4.jpg', 'img/zauene4-s.jpg', 'Stabgitterzaun mit Tor'],
+    ],
+  },
+  wasser: {
+    title: 'Wasser im Garten',
+    text: 'Teiche und Wasserbecken als ruhiger Mittelpunkt einer Anlage.',
+    tags: ['Teichbau', 'Wasserbecken'],
+    photos: [
+      ['img/hero/wasser-1200.jpg', 'img/hero/wasser-720.jpg', 'Wasserauslauf aus Stein über einem Wasserbecken'],
+      ['img/teichbau4.jpg', 'img/teichbau4-s.jpg', 'Pergola, Pflasterweg und Wasserbecken in einer Außenanlage'],
+      ['img/teichbau5.jpg', 'img/teichbau5-s.jpg', 'Steg zwischen zwei runden Wasserbecken'],
+      ['img/teichbau3.jpg', 'img/teichbau3-s.jpg', 'Ovales Wasserbecken mit Geländer'],
+      ['img/teichbau2.jpg', 'img/teichbau2-s.jpg', 'Wasserbecken mit Kiesboden'],
+    ],
+  },
+  spiel: {
+    title: 'Spiel & Sport',
+    text: 'Spielplätze und Sportstätten, von der Planung bis zum Bau.',
+    tags: ['Spielplätze', 'Sportstättenbau'],
+    photos: [
+      ['img/hero/spiel-1200.jpg', 'img/hero/spiel-720.jpg', 'Spielturm aus Holz mit Rutsche und Kletternetz auf einer Sandfläche'],
+      ['img/spielplatz5.jpg', 'img/spielplatz5-s.jpg', 'Sandspielbereich mit Elementen aus Rundholz'],
+      ['img/spielplatz4.jpg', 'img/spielplatz4-s.jpg', 'Spielhaus aus Holz mit Kletternetz und Leiter'],
+    ],
+  },
+  erde: {
+    title: 'Erd- & Tiefbau',
+    text: 'Aushub, Erdbewegung und Schachtbau mit eigenen Maschinen.',
+    tags: ['Erdarbeiten', 'Tiefbau'],
+    photos: [
+      ['img/erdarbeiten1.jpg', 'img/erdarbeiten1-s.jpg', 'Bagger und Lkw beim Bodenaushub'],
+      ['img/erdarbeiten5.jpg', 'img/erdarbeiten5-s.jpg', 'Firmenfahrzeuge von Hundehege auf der Baustelle'],
+      ['img/tiefbau5.jpg', 'img/tiefbau5-s.jpg', 'Schachtring auf einer Tiefbaustelle, dahinter ein Bagger'],
+      ['img/tiefbau3.jpg', 'img/tiefbau3-s.jpg', 'Rotationslaser auf einer Tiefbaustelle'],
+      ['img/tiefbau1.jpg', 'img/tiefbau1-s.jpg', 'Schachtbauwerk in der Baugrube'],
+      ['img/erdarbeiten2.jpg', 'img/erdarbeiten2-s.jpg', 'Baggerschaufel beim Verteilen von Boden'],
+      ['img/erdarbeiten3.jpg', 'img/erdarbeiten3-s.jpg', 'Planierte Trasse, von oben'],
+    ],
+  },
 };
+const ORDER = ['stein', 'garten', 'wasser', 'spiel', 'erde'];
 
 const GALLERY = [
   ['teichbau4', 'wasser', 'big', 'Pergola, Pflasterweg und Wasserbecken in einer Außenanlage'],
@@ -58,107 +97,112 @@ const GALLERY = [
   ['teichbau5', 'wasser', '', 'Steg zwischen zwei Wasserbecken'],
 ];
 
-const mqWide = matchMedia('(min-width: 761px)');
-const mqHover = matchMedia('(hover: hover) and (pointer: fine)');
 const $ = (s, el = document) => el.querySelector(s);
 const $$ = (s, el = document) => [...el.querySelectorAll(s)];
+const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-// ---------- Bildwechsel (Bühne und Handy-Ansicht) ----------
-function setImage(frame, src, alt) {
-  const on = $('.stage-img.is-on', frame);
-  const off = $$('.stage-img', frame).find((i) => i !== on);
-  if (on && on.getAttribute('src') === src) return;
-  const swap = () => {
-    off.alt = alt; off.removeAttribute('aria-hidden'); off.classList.add('is-on');
-    if (on) { on.classList.remove('is-on'); on.setAttribute('aria-hidden', 'true'); on.alt = ''; }
-  };
-  off.src = src;
-  (off.decode ? off.decode() : Promise.resolve()).then(swap, swap);
-}
-
-function buildMedia(box) {
-  box.innerHTML = `<div class="stage-frame"><img class="stage-img" alt=""><img class="stage-img" alt="" aria-hidden="true"></div>
-    <div class="stage-thumbs" role="group" aria-label="Fotos aus diesem Bereich"></div><p class="stage-cap"></p>`;
-}
-
-const current = { area: null, photo: {} };
-
-function showPhoto(box, area, i) {
-  const p = AREAS[area].photos[i];
-  current.photo[area] = i;
-  setImage($('.stage-frame', box), p[0], p[2]);
-  $('.stage-cap', box).textContent = p[2];
-  const thumbs = $('.stage-thumbs', box);
-  if (thumbs.dataset.area !== area) {
-    thumbs.dataset.area = area;
-    thumbs.innerHTML = AREAS[area].photos.map((ph, n) =>
-      `<button type="button" class="thumb" data-i="${n}" aria-label="Foto ${n + 1}: ${ph[2]}"><img src="${ph[1]}" alt="" loading="lazy"></button>`).join('');
-    $$('.thumb', thumbs).forEach((b) => b.addEventListener('click', () => showPhoto(box, area, +b.dataset.i)));
-  }
-  $$('.thumb', thumbs).forEach((b) => b.setAttribute('aria-pressed', String(+b.dataset.i === i)));
-}
-
-// ---------- Leistungsbereiche ----------
-const items = $$('.lz-item');
-const stage = $('.lz-stage');
-
-function activate(area, { toggle = false } = {}) {
-  const item = items.find((it) => it.dataset.area === area);
-  if (!item) return;
-  const isOpen = item.classList.contains('is-active');
-  if (toggle && isOpen && !mqWide.matches) { // auf dem Handy wieder zuklappen
-    item.classList.remove('is-active');
-    $('.lz-btn', item).setAttribute('aria-expanded', 'false');
-    current.area = null;
-    return;
-  }
-  if (isOpen && current.area === area) return;
-  items.forEach((it) => {
-    const on = it === item;
-    it.classList.toggle('is-active', on);
-    $('.lz-btn', it).setAttribute('aria-expanded', String(on));
-  });
-  current.area = area;
-  const i = current.photo[area] || 0;
-  if (mqWide.matches) {
-    $('.stage-area', stage).textContent = AREAS[area].name;
-    showPhoto(stage, area, i);
-  } else {
-    const box = $('.lz-media', item);
-    if (!box.firstChild) buildMedia(box);
-    showPhoto(box, area, i);
-  }
-}
-
-// nach einem Sprung aus dem Hero: Bereich nicht sofort durch den Mauszeiger wechseln
-let hoverLock = 0;
-items.forEach((it) => {
-  const btn = $('.lz-btn', it);
-  let t;
-  btn.addEventListener('click', () => activate(it.dataset.area, { toggle: true }));
-  btn.addEventListener('mouseenter', () => {
-    if (!mqHover.matches || !mqWide.matches || Date.now() < hoverLock) return;
-    t = setTimeout(() => activate(it.dataset.area), 110);
-  });
-  btn.addEventListener('mouseleave', () => clearTimeout(t));
+// ---------- Leistungen: Fotozahl auf den Karten ----------
+$$('.card-count').forEach((el) => {
+  const n = AREAS[el.dataset.count].photos.length;
+  el.textContent = `${n} Fotos ansehen`;
 });
 
-mqWide.addEventListener('change', () => { const a = current.area || 'stein'; current.area = null; activate(a); });
-activate('stein');
+// ---------- Projektansicht ----------
+const pv = $('#pv');
+const pvState = { area: null, i: 0 };
 
-// Einstiege aus dem Hero und andere Links auf einen Bereich
+function pvShow(i) {
+  const photos = AREAS[pvState.area].photos;
+  pvState.i = (i + photos.length) % photos.length;
+  const [src, , alt] = photos[pvState.i];
+  const on = $('.pv-img.is-on', pv);
+  const off = $$('.pv-img', pv).find((x) => x !== on);
+  const swap = () => {
+    off.alt = alt; off.removeAttribute('aria-hidden'); off.classList.add('is-on');
+    on.classList.remove('is-on'); on.setAttribute('aria-hidden', 'true'); on.alt = '';
+  };
+  if (on.getAttribute('src') !== src) {
+    off.src = src;
+    (off.decode ? off.decode() : Promise.resolve()).then(swap, swap);
+  }
+  $('.pv-count', pv).textContent = `${pvState.i + 1} / ${photos.length}`;
+  $('.pv-cap', pv).textContent = alt;
+  $$('.pv-thumb', pv).forEach((t, n) => t.setAttribute('aria-current', String(n === pvState.i)));
+  const cur = $$('.pv-thumb', pv)[pvState.i];
+  if (cur) cur.scrollIntoView({ block: 'nearest', inline: 'nearest' });
+  const single = photos.length < 2;
+  $$('.pv-nav', pv).forEach((b) => (b.hidden = single));
+}
+
+function pvFill(area) {
+  const a = AREAS[area];
+  pvState.area = area;
+  $('#pv-title').textContent = a.title;
+  $('.pv-text', pv).textContent = a.text;
+  $('.pv-tags', pv).innerHTML = a.tags.map((t) => `<li>${t}</li>`).join('');
+  $('.pv-thumbs', pv).innerHTML = a.photos.map((p, n) =>
+    `<button type="button" class="pv-thumb" data-i="${n}" aria-label="Foto ${n + 1}: ${p[2]}"><img src="${p[1]}" alt="" loading="lazy"></button>`).join('');
+  $$('.pv-thumb', pv).forEach((b) => b.addEventListener('click', () => pvShow(+b.dataset.i)));
+  const next = ORDER[(ORDER.indexOf(area) + 1) % ORDER.length];
+  $('#pv-nextarea b').textContent = AREAS[next].title;
+  $('#pv-nextarea').dataset.next = next;
+  $('#pv-talk').dataset.topic = area;
+  // erstes Bild sofort setzen, ohne Überblendung vom vorherigen Bereich
+  $$('.pv-img', pv).forEach((im, n) => {
+    im.classList.toggle('is-on', n === 0);
+    if (n === 0) { im.src = a.photos[0][0]; im.alt = a.photos[0][2]; im.removeAttribute('aria-hidden'); }
+    else { im.alt = ''; im.setAttribute('aria-hidden', 'true'); }
+  });
+  pvShow(0);
+}
+
+function pvOpen(area) {
+  pvFill(area);
+  if (!pv.open) {
+    pv.showModal();
+    document.body.classList.add('pv-open');
+  }
+  const next = $('.pv-next', pv);
+  (next.hidden ? $('.pv-close', pv) : next).focus();
+}
+pv.addEventListener('close', () => document.body.classList.remove('pv-open'));
+pv.addEventListener('click', (e) => { if (e.target === pv) pv.close(); });
+$('.pv-prev', pv).addEventListener('click', () => pvShow(pvState.i - 1));
+$('.pv-next', pv).addEventListener('click', () => pvShow(pvState.i + 1));
+$('#pv-nextarea').addEventListener('click', (e) => pvFill(e.currentTarget.dataset.next));
+pv.addEventListener('keydown', (e) => {
+  if (e.key === 'ArrowLeft') { e.preventDefault(); pvShow(pvState.i - 1); }
+  if (e.key === 'ArrowRight') { e.preventDefault(); pvShow(pvState.i + 1); }
+});
+// Wischen auf dem Bild
+let sx = null;
+const frame = $('.pv-frame', pv);
+frame.addEventListener('pointerdown', (e) => { if (e.pointerType !== 'mouse') sx = e.clientX; });
+frame.addEventListener('pointerup', (e) => {
+  if (sx === null) return;
+  const dx = e.clientX - sx; sx = null;
+  if (Math.abs(dx) > 40) pvShow(pvState.i + (dx < 0 ? 1 : -1));
+});
+frame.addEventListener('pointercancel', () => (sx = null));
+
+$('#pv-talk').addEventListener('click', (e) => {
+  e.preventDefault();
+  const topic = e.currentTarget.dataset.topic;
+  pv.close();
+  $('#more').open = true;
+  $$('#topics input').forEach((i) => (i.checked = i.value === topic));
+  $('#kontakt').scrollIntoView({ behavior: reduced ? 'auto' : 'smooth' });
+});
+
+$$('.card').forEach((c) => c.addEventListener('click', () => pvOpen(c.dataset.area)));
+
+// Einstiege aus dem Hero: Bereich direkt öffnen, dahinter zu den Leistungen springen
 $$('a[data-area]').forEach((a) => a.addEventListener('click', (e) => {
   e.preventDefault();
-  hoverLock = Date.now() + 1600;
-  const list = $('.lz-list');
-  list.classList.add('no-anim');
-  activate(a.dataset.area);
-  requestAnimationFrame(() => {
-    list.classList.remove('no-anim');
-    const target = mqWide.matches ? $('.lz') : items.find((it) => it.dataset.area === a.dataset.area);
-    target.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
-  });
-  history.replaceState(null, '', '#leistungen');
+  document.documentElement.style.scrollBehavior = 'auto';
+  $('#leistungen').scrollIntoView();
+  document.documentElement.style.scrollBehavior = '';
+  pvOpen(a.dataset.area);
 }));
 
 // ---------- Galerie ----------
@@ -178,9 +222,8 @@ function filter(f) {
 }
 allBtn.textContent = `Alle ${GALLERY.length} Fotos zeigen`;
 allBtn.addEventListener('click', () => { showAll = true; filter('alle'); });
-filter('alle');
 filterBtns.forEach((b) => b.addEventListener('click', () => filter(b.dataset.f)));
-$$('a[data-filter]').forEach((a) => a.addEventListener('click', () => filter(a.dataset.filter)));
+filter('alle');
 
 const lb = $('#lightbox');
 grid.addEventListener('click', (e) => {
@@ -193,11 +236,31 @@ grid.addEventListener('click', (e) => {
 });
 lb.addEventListener('click', (e) => { if (e.target === lb) lb.close(); });
 
-// „Projekt besprechen" aus einem Bereich: Bereich im Formular vormerken
-$$('a[data-topic]').forEach((a) => a.addEventListener('click', () => {
-  $('#more').open = true;
-  $$('#topics input').forEach((i) => (i.checked = i.value === a.dataset.topic));
-}));
+// ---------- Geschichte: Wörter leuchten beim Scrollen nacheinander auf ----------
+const words = $$('.story-words span');
+if (!reduced && words.length) {
+  let ticking = false;
+  const update = () => {
+    ticking = false;
+    const vh = innerHeight;
+    words.forEach((w) => {
+      const r = w.getBoundingClientRect();
+      const p = Math.min(1, Math.max(0, (vh * 0.8 - r.top) / (vh * 0.22)));
+      w.style.setProperty('--o', (0.16 + 0.84 * p).toFixed(3));
+    });
+  };
+  addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+  addEventListener('resize', update);
+  update();
+}
+
+// ---------- Weg und Medaillen: einmaliges Einblenden ----------
+if (!reduced && 'IntersectionObserver' in window) {
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((en) => { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+  }, { threshold: 0.3 });
+  $$('.path, .ehrung').forEach((el) => { el.classList.add('armed'); io.observe(el); });
+}
 
 // ---------- Formulare: im Entwurf wird nichts verschickt ----------
 $$('form.form').forEach((form) => form.addEventListener('submit', (e) => {

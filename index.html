@@ -7,27 +7,30 @@
 <title>Josef Hundehege · Garten- und Landschaftsbau in Ochtrup (Entwurf)</title>
 <meta name="description" content="Unverbindlicher Gestaltungsentwurf von Leon Oßendorf für die Josef Hundehege GmbH & Co. KG, Ochtrup. Keine offizielle Seite.">
 <meta name="theme-color" content="#0E3A2B">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preload" href="fonts/bricolage.woff" as="font" type="font/woff" crossorigin>
 <link rel="stylesheet" href="style.css">
 </head>
 <body class="hide-notes">
 
-<!-- Logo: nach der Vorlage von hundehege.com nachgezeichnet (Entwurf) -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="logo" viewBox="0 0 154 113">
-    <g class="lg-back">
-      <circle cx="77" cy="20" r="17"/><circle cx="57" cy="30" r="14"/><circle cx="97" cy="30" r="14"/>
-      <circle cx="41" cy="46" r="14"/><circle cx="113" cy="46" r="14"/><circle cx="30" cy="66" r="12"/><circle cx="124" cy="66" r="12"/>
-      <rect x="24" y="40" width="106" height="52"/>
-    </g>
-    <g class="lg-front">
-      <circle cx="17" cy="51" r="8"/><circle cx="30" cy="47" r="9"/><circle cx="45" cy="45" r="9"/><circle cx="60" cy="44" r="9"/><circle cx="77" cy="43" r="10"/><circle cx="94" cy="44" r="9"/><circle cx="109" cy="45" r="9"/><circle cx="124" cy="47" r="9"/><circle cx="137" cy="51" r="8"/>
-      <circle cx="16" cy="84" r="7"/><circle cx="31" cy="87" r="7"/><circle cx="46" cy="88" r="7"/><circle cx="62" cy="88" r="7"/><circle cx="77" cy="89" r="7"/><circle cx="92" cy="88" r="7"/><circle cx="108" cy="88" r="7"/><circle cx="123" cy="87" r="7"/><circle cx="138" cy="84" r="7"/>
-      <rect x="9" y="50" width="136" height="36" rx="6"/>
-    </g>
-    <text class="lg-josef" x="77" y="57" text-anchor="middle">JOSEF</text>
-    <text class="lg-name" x="77" y="81" text-anchor="middle" textLength="128" lengthAdjust="spacingAndGlyphs">HUNDEHEGE</text>
-    <text class="lg-gmbh" x="77" y="108" text-anchor="middle">GmbH &amp; Co. KG</text>
+<!-- Metallverläufe für die Medaillen-Illustration -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="mg-gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFF4BE"/><stop offset=".38" stop-color="#E2BB4C"/><stop offset=".72" stop-color="#A97A14"/><stop offset="1" stop-color="#F0D57C"/></linearGradient>
+    <linearGradient id="mg-silber" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".38" stop-color="#CDD3D9"/><stop offset=".72" stop-color="#858F99"/><stop offset="1" stop-color="#E4E8EC"/></linearGradient>
+    <linearGradient id="mg-bronze" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFD9B3"/><stop offset=".38" stop-color="#CC8A4F"/><stop offset=".72" stop-color="#8A5126"/><stop offset="1" stop-color="#E6AF82"/></linearGradient>
+  </defs>
+  <symbol id="medal" viewBox="0 0 120 172">
+    <polygon points="30,0 52,0 68,66 46,66" fill="#1C6F51"/>
+    <polygon points="68,0 90,0 74,66 52,66" fill="#E9EEEA"/>
+    <polygon points="68,0 90,0 74,66 52,66" fill="#000" opacity=".12"/>
+    <circle cx="60" cy="112" r="54" style="fill:var(--metal)"/>
+    <circle cx="60" cy="112" r="54" fill="none" stroke="#000" stroke-opacity=".18" stroke-width="2"/>
+    <circle cx="60" cy="112" r="44" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="1.5"/>
+    <circle cx="60" cy="112" r="40" fill="none" stroke="#000" stroke-opacity=".14" stroke-width="1"/>
+    <text x="60" y="121" text-anchor="middle" class="medal-y">1997</text>
   </symbol>
 </svg>
 
@@ -35,13 +38,16 @@
 
 <header class="top" id="top">
   <a class="brand" href="#top" aria-label="Josef Hundehege GmbH &amp; Co. KG, zum Seitenanfang">
-    <svg class="brand-logo" role="img" aria-hidden="true"><use href="#logo"/></svg>
+    <picture>
+      <source type="image/webp" srcset="brand/logo-360.webp 1x, brand/logo-720.webp 2x">
+      <img class="brand-logo" src="brand/logo-360.png" srcset="brand/logo-720.png 2x" width="360" height="128" alt="Josef Hundehege GmbH &amp; Co. KG">
+    </picture>
   </a>
   <nav class="nav" id="nav" aria-label="Hauptnavigation">
     <a href="#leistungen">Leistungen</a>
     <a href="#projekte">Projekte</a>
-    <a href="#unternehmen">Unternehmen</a>
     <a href="#ausbildung">Ausbildung</a>
+    <a href="#unternehmen">Unternehmen</a>
     <a href="#kontakt" class="nav-cta">Projekt besprechen</a>
   </nav>
   <a class="tel-top" href="tel:+4925533630">02553 3630</a>
@@ -103,90 +109,59 @@
 
 <p class="note note-wide"><b>Entwurfsnotiz:</b> Die drei großen Fotos stammen von hundehege.com und wurden für den Entwurf digital vergrößert. Für die fertige Seite empfehlen wir aktuelle Originalaufnahmen in voller Auflösung.</p>
 
-<!-- LEISTUNGEN -->
+<!-- LEISTUNGEN: feste Bildkarten, Klick öffnet die Projektansicht -->
 <section class="leistungen" id="leistungen" aria-labelledby="lz-title">
   <div class="lz-head">
     <h2 id="lz-title">Vom ersten Erdaushub bis zur fertigen Außenanlage.</h2>
-    <p>Alle Arbeiten aus einer Hand, in fünf Bereichen. Jeder Bereich zeigt Fotos aus ausgeführten Projekten.</p>
+    <p>Fünf Leistungsbereiche aus einer Hand. Öffnen Sie einen Bereich, um Fotos aus ausgeführten Projekten zu sehen.</p>
   </div>
-
-  <div class="lz">
-    <ul class="lz-list">
-      <li class="lz-item" data-area="stein">
-        <button class="lz-btn" type="button" aria-expanded="false" aria-controls="p-stein">
-          <span class="lz-thumb" aria-hidden="true"><img src="img/hero/mauer-960.jpg" alt="" loading="lazy"></span>
-          <span class="lz-words"><span class="lz-title">Naturstein &amp; Pflaster</span><span class="lz-short">Mauern, Wege, Terrassen und Parkplätze.</span></span>
-          <span class="lz-icon" aria-hidden="true"></span>
-        </button>
-        <div class="lz-panel" id="p-stein"><div class="lz-inner">
-          <div class="lz-media"></div>
-          <ul class="lz-tags"><li>Pflasterarbeiten, auch mit Naturstein</li><li>Natursteinmauern</li><li>Parkplätze</li></ul>
-          <div class="lz-actions"><a class="btn btn-small" href="#projekte" data-filter="stein">Projektbilder ansehen</a><a class="lz-talk" href="#kontakt" data-topic="Naturstein &amp; Pflaster">Projekt besprechen</a></div>
-        </div></div>
-      </li>
-      <li class="lz-item" data-area="garten">
-        <button class="lz-btn" type="button" aria-expanded="false" aria-controls="p-garten">
-          <span class="lz-thumb" aria-hidden="true"><img src="img/zaeune2-s.jpg" alt="" loading="lazy"></span>
-          <span class="lz-words"><span class="lz-title">Gärten &amp; Grünanlagen</span><span class="lz-short">Planung, Bepflanzung, Zäune und Pergolen.</span></span>
-          <span class="lz-icon" aria-hidden="true"></span>
-        </button>
-        <div class="lz-panel" id="p-garten"><div class="lz-inner">
-          <div class="lz-media"></div>
-          <ul class="lz-tags"><li>Gartengestaltung und Grünanlagen</li><li>Rasensaat und Bepflanzung</li><li>Zäune und Pergolen</li></ul>
-          <div class="lz-actions"><a class="btn btn-small" href="#projekte" data-filter="garten">Projektbilder ansehen</a><a class="lz-talk" href="#kontakt" data-topic="Gärten &amp; Grünanlagen">Projekt besprechen</a></div>
-        </div></div>
-      </li>
-      <li class="lz-item" data-area="wasser">
-        <button class="lz-btn" type="button" aria-expanded="false" aria-controls="p-wasser">
-          <span class="lz-thumb" aria-hidden="true"><img src="img/hero/wasser-720.jpg" alt="" loading="lazy"></span>
-          <span class="lz-words"><span class="lz-title">Wasser im Garten</span><span class="lz-short">Teiche und Wasserbecken als Mittelpunkt einer Anlage.</span></span>
-          <span class="lz-icon" aria-hidden="true"></span>
-        </button>
-        <div class="lz-panel" id="p-wasser"><div class="lz-inner">
-          <div class="lz-media"></div>
-          <ul class="lz-tags"><li>Teichbau</li><li>Wasserbecken</li></ul>
-          <div class="lz-actions"><a class="btn btn-small" href="#projekte" data-filter="wasser">Projektbilder ansehen</a><a class="lz-talk" href="#kontakt" data-topic="Wasser im Garten">Projekt besprechen</a></div>
-        </div></div>
-      </li>
-      <li class="lz-item" data-area="spiel">
-        <button class="lz-btn" type="button" aria-expanded="false" aria-controls="p-spiel">
-          <span class="lz-thumb" aria-hidden="true"><img src="img/hero/spiel-720.jpg" alt="" loading="lazy"></span>
-          <span class="lz-words"><span class="lz-title">Spiel &amp; Sport</span><span class="lz-short">Spielplätze und Sportstätten, von der Planung bis zum Bau.</span></span>
-          <span class="lz-icon" aria-hidden="true"></span>
-        </button>
-        <div class="lz-panel" id="p-spiel"><div class="lz-inner">
-          <div class="lz-media"></div>
-          <ul class="lz-tags"><li>Spielplätze</li><li>Sportstättenbau</li></ul>
-          <div class="lz-actions"><a class="btn btn-small" href="#projekte" data-filter="spiel">Projektbilder ansehen</a><a class="lz-talk" href="#kontakt" data-topic="Spiel &amp; Sport">Projekt besprechen</a></div>
-        </div></div>
-      </li>
-      <li class="lz-item" data-area="erde">
-        <button class="lz-btn" type="button" aria-expanded="false" aria-controls="p-erde">
-          <span class="lz-thumb" aria-hidden="true"><img src="img/erdarbeiten1-s.jpg" alt="" loading="lazy"></span>
-          <span class="lz-words"><span class="lz-title">Erd- &amp; Tiefbau</span><span class="lz-short">Aushub, Erdbewegung und Schachtbau mit eigenen Maschinen.</span></span>
-          <span class="lz-icon" aria-hidden="true"></span>
-        </button>
-        <div class="lz-panel" id="p-erde"><div class="lz-inner">
-          <div class="lz-media"></div>
-          <ul class="lz-tags"><li>Erdarbeiten</li><li>Tiefbau</li></ul>
-          <div class="lz-actions"><a class="btn btn-small" href="#projekte" data-filter="erde">Projektbilder ansehen</a><a class="lz-talk" href="#kontakt" data-topic="Erd- &amp; Tiefbau">Projekt besprechen</a></div>
-        </div></div>
-      </li>
-    </ul>
-
-    <div class="lz-stage" aria-live="polite">
-      <div class="stage-frame">
-        <img class="stage-img is-on" src="img/hero/mauer-1600.jpg" alt="Natursteinmauer mit Sandsteinabdeckung entlang eines gepflasterten Weges" loading="lazy">
-        <img class="stage-img" alt="" aria-hidden="true">
-        <p class="stage-area"></p>
-      </div>
-      <div class="stage-bar">
-        <div class="stage-thumbs" role="group" aria-label="Fotos aus diesem Bereich"></div>
-        <p class="stage-cap"></p>
-      </div>
-    </div>
+  <div class="cards">
+    <button class="card" type="button" data-area="stein" aria-haspopup="dialog">
+      <span class="card-img"><img src="img/3952.jpg" alt="" loading="lazy" width="800" height="600"></span>
+      <span class="card-body">
+        <span class="card-title">Naturstein &amp; Pflaster</span>
+        <span class="card-text">Mauern, Wege, Terrassen und Parkplätze.</span>
+        <span class="card-tags">Pflaster auch aus Naturstein, Natursteinmauern, Parkplätze</span>
+        <span class="card-open"><span class="card-count" data-count="stein"></span><span class="plus" aria-hidden="true"></span></span>
+      </span>
+    </button>
+    <button class="card" type="button" data-area="garten" aria-haspopup="dialog">
+      <span class="card-img"><img src="img/zaeune2.jpg" alt="" loading="lazy" width="800" height="600"></span>
+      <span class="card-body">
+        <span class="card-title">Gärten &amp; Grünanlagen</span>
+        <span class="card-text">Von der Planung bis zum letzten Pflanzloch.</span>
+        <span class="card-tags">Gartengestaltung, Rasensaat und Bepflanzung, Zäune und Pergolen</span>
+        <span class="card-open"><span class="card-count" data-count="garten"></span><span class="plus" aria-hidden="true"></span></span>
+      </span>
+    </button>
+    <button class="card" type="button" data-area="wasser" aria-haspopup="dialog">
+      <span class="card-img"><img src="img/teichbau4.jpg" alt="" loading="lazy" width="800" height="600"></span>
+      <span class="card-body">
+        <span class="card-title">Wasser im Garten</span>
+        <span class="card-text">Teiche und Wasserbecken als Mittelpunkt einer Anlage.</span>
+        <span class="card-tags">Teichbau, Wasserbecken</span>
+        <span class="card-open"><span class="card-count" data-count="wasser"></span><span class="plus" aria-hidden="true"></span></span>
+      </span>
+    </button>
+    <button class="card card-wide" type="button" data-area="spiel" aria-haspopup="dialog">
+      <span class="card-img"><img src="img/spielplatz5.jpg" alt="" loading="lazy" width="800" height="600"></span>
+      <span class="card-body">
+        <span class="card-title">Spiel &amp; Sport</span>
+        <span class="card-text">Spielplätze und Sportstätten, von der Planung bis zum Bau.</span>
+        <span class="card-tags">Spielplätze, Sportstättenbau</span>
+        <span class="card-open"><span class="card-count" data-count="spiel"></span><span class="plus" aria-hidden="true"></span></span>
+      </span>
+    </button>
+    <button class="card card-wide" type="button" data-area="erde" aria-haspopup="dialog">
+      <span class="card-img"><img src="img/erdarbeiten1.jpg" alt="" loading="lazy" width="800" height="600"></span>
+      <span class="card-body">
+        <span class="card-title">Erd- &amp; Tiefbau</span>
+        <span class="card-text">Aushub, Erdbewegung und Schachtbau mit eigenen Maschinen.</span>
+        <span class="card-tags">Erdarbeiten, Tiefbau</span>
+        <span class="card-open"><span class="card-count" data-count="erde"></span><span class="plus" aria-hidden="true"></span></span>
+      </span>
+    </button>
   </div>
-  <p class="lz-hint" aria-hidden="true"><span class="hint-fine">Fahren Sie über einen Bereich oder klicken Sie ihn an.</span><span class="hint-touch">Tippen Sie auf einen Bereich, um ihn zu öffnen.</span></p>
   <p class="note"><b>Entwurfsnotiz:</b> Die zehn Leistungen von hundehege.com sind hier in fünf Bereiche gegliedert. Gliederung und Kurztexte stimmen wir mit Ihnen ab.</p>
 </section>
 
@@ -211,53 +186,78 @@
   <p class="note"><b>Entwurfsnotiz:</b> Auf hundehege.com liegen diese Fotos heute auf sieben Unterseiten, ohne Ort und Jahr. Ein Satz pro Projekt, etwa Objektart, Ort und Fläche, macht daraus Referenzen, nach denen Architekten und Ausschreibende suchen.</p>
 </section>
 
-<!-- UNTERNEHMEN -->
-<section class="unternehmen" id="unternehmen" aria-labelledby="un-title">
-  <div class="un-text">
-    <h2 id="un-title">Mit der Schubkarre zur Goldmedaille.</h2>
-    <p class="un-lead">Ein Mann, eine Schubkarre, ein VW Käfer und ein Spaten: So fing es im August 1972 an, an der alten Wassermühle gegenüber von Haus Welbergen in Ochtrup.</p>
-    <p>Ein Jahr später stellte Josef Hundehege den ersten Mitarbeiter ein, 1976 zog der Betrieb an den heutigen Standort am Bökerhook. Aufträge kamen bald aus dem ganzen Münsterland und dem Ruhrgebiet. Heute ist Hundehege ein mittelständischer Ausbildungsbetrieb mit rund 20 Angestellten, geführt von Marcus Hundehege.</p>
-    <ol class="years">
-      <li><b>1972</b><span>Gründung in Ochtrup</span></li>
-      <li><b>1976</b><span>Umzug an den Bökerhook</span></li>
-      <li><b>1997</b><span>Medaillen auf der Bundesgartenschau</span></li>
-    </ol>
-  </div>
-  <div class="un-side">
-    <figure class="un-img"><img src="img/erdarbeiten5.jpg" alt="Lkw und Transporter mit Hundehege-Logo auf einer Baustelle" loading="lazy" width="900" height="600"></figure>
-    <div class="buga">
-      <p class="buga-head">Bundesgartenschau Gelsenkirchen 1997</p>
-      <p class="buga-medals"><span><b>1</b> Gold</span><span><b>3</b> Silber</span><span><b>2</b> Bronze</span></p>
-    </div>
-  </div>
-  <p class="note note-span"><b>Entwurfsnotiz:</b> Die Zahl „rund 20 Angestellte" steht ohne Datum auf hundehege.com, bitte bestätigen. Ein Foto aus den Anfangsjahren neben einem aktuellen Teamfoto würde diesen Abschnitt stark machen. Der letzte Beitrag unter „Aktuell" ist vom April 2011.</p>
-</section>
-
 <!-- AUSBILDUNG -->
 <section class="ausbildung" id="ausbildung" aria-labelledby="aus-title">
   <div class="aus-text">
-    <h2 id="aus-title">Ausbildung zum Landschaftsgärtner (m/w/d)</h2>
-    <p class="aus-lead">Draußen arbeiten und abends sehen, was man geschafft hat. Bei uns lernst du alle Bereiche des Garten- und Landschaftsbaus, vom Pflaster bis zur Pflanzung.</p>
-    <dl class="facts">
-      <div><dt>Plätze</dt><dd>6</dd></div>
-      <div><dt>Dauer</dt><dd>2–3 Jahre</dd></div>
-      <div><dt>Vergütung</dt><dd>nach Tarif</dd></div>
-    </dl>
-    <p>Familiengeführter Betrieb, moderner Maschinen- und Gerätepark, gutes Arbeitsklima. Start ab sofort oder nach Absprache.</p>
+    <p class="aus-job">Ausbildung zum Landschaftsgärtner (m/w/d), Start ab sofort</p>
+    <h2 id="aus-title">Draußen arbeiten.<br>Abends sehen, was man geschafft hat.</h2>
+    <p class="aus-lead">Im familiengeführten Betrieb lernst du alle Bereiche des Garten- und Landschaftsbaus, vom Pflaster bis zur Pflanzung.</p>
+    <ul class="facts">
+      <li><b>6</b><span>Ausbildungs­plätze</span></li>
+      <li><b>2–3</b><span>Jahre, dual</span></li>
+      <li><b>Tarif</b><span>Vergütung nach Tarifrecht</span></li>
+    </ul>
+    <p>Moderner Maschinen- und Gerätepark, gutes Arbeitsklima und ein Betrieb, der seit 1972 in Ochtrup baut.</p>
     <p class="note"><b>Entwurfsnotiz:</b> Diese sechs Plätze stehen heute auf ausbildung.de und aubi-plus.de, aber nicht auf hundehege.com. Wer dort klickt und Ihre Seite aufruft, findet keinen Hinweis darauf.</p>
   </div>
-  <form class="form form-dark" data-kind="bewerbung" novalidate>
-    <p class="form-title">In zwei Minuten bewerben</p>
-    <p class="form-hint">Kein Anschreiben nötig. Wir rufen dich zurück.</p>
-    <label>Vorname und Name<input type="text" name="name" autocomplete="name"></label>
-    <label>Handy (auch WhatsApp)<input type="tel" name="tel" autocomplete="tel"></label>
-    <label>Schulabschluss
-      <select name="abschluss"><option>Hauptschulabschluss</option><option>Klasse 10 / Realschule</option><option>Fachabitur / Abitur</option><option>Noch in der Schule</option></select>
-    </label>
-    <label class="check"><input type="checkbox" name="praktikum"> Ich möchte zuerst ein Praktikum machen</label>
-    <button class="btn btn-light" type="submit">Rückruf anfordern</button>
-    <p class="form-status" role="status" aria-live="polite"></p>
-  </form>
+  <div class="aus-side">
+    <figure><img src="img/erdarbeiten5.jpg" alt="Lkw und Transporter mit Hundehege-Logo auf einer Baustelle" loading="lazy" width="900" height="600"></figure>
+    <form class="form form-dark" data-kind="bewerbung" novalidate>
+      <p class="form-title">In zwei Minuten bewerben</p>
+      <p class="form-hint">Kein Anschreiben nötig. Wir rufen dich zurück.</p>
+      <label>Vorname und Name<input type="text" name="name" autocomplete="name"></label>
+      <label>Handy (auch WhatsApp)<input type="tel" name="tel" autocomplete="tel"></label>
+      <label>Schulabschluss
+        <select name="abschluss"><option>Hauptschulabschluss</option><option>Klasse 10 / Realschule</option><option>Fachabitur / Abitur</option><option>Noch in der Schule</option></select>
+      </label>
+      <label class="check"><input type="checkbox" name="praktikum"> Ich möchte zuerst ein Praktikum machen</label>
+      <button class="btn btn-light" type="submit">Rückruf anfordern</button>
+      <p class="form-status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<!-- UNTERNEHMEN: erst die Geschichte ... -->
+<section class="story" id="unternehmen" aria-labelledby="st-title">
+  <h2 id="st-title">Mit der Schubkarre zur Goldmedaille.</h2>
+  <div class="story-start">
+    <p class="story-year" aria-hidden="true">1972</p>
+    <div class="story-copy">
+      <p class="story-words"><span>Ein Mann.</span> <span>Eine Schubkarre.</span> <span>Ein VW Käfer.</span> <span>Ein Spaten.</span></p>
+      <p class="story-lead">So fing es im August 1972 an: Josef Hundehege, an der alten Wassermühle gegenüber von Haus Welbergen in Ochtrup.</p>
+    </div>
+  </div>
+  <ol class="path">
+    <li><b>1973</b><span>Der erste Angestellte. Weitere folgen, es wird eng.</span></li>
+    <li><b>1976</b><span>Umzug an den Bökerhook 12, den heutigen Firmensitz.</span></li>
+    <li><b>Danach</b><span>Aufträge im ganzen Münsterland und im Ruhrgebiet.</span></li>
+    <li><b>Heute</b><span>Mittelständischer Ausbildungsbetrieb mit rund 20 Angestellten, geführt von Marcus Hundehege.</span></li>
+  </ol>
+  <p class="note"><b>Entwurfsnotiz:</b> Die Zahl „rund 20 Angestellte“ steht ohne Datum auf hundehege.com, bitte bestätigen. Ein Foto aus den Anfangsjahren würde diesen Abschnitt noch persönlicher machen.</p>
+</section>
+
+<!-- ... dann die Auszeichnung -->
+<section class="ehrung" aria-labelledby="eh-title">
+  <div class="eh-text">
+    <p class="eh-kicker">Bundesgartenschau Gelsenkirchen</p>
+    <h2 id="eh-title" class="eh-year">1997</h2>
+    <p class="eh-lead">Die Jury zeichnete die Hundehege GmbH mit einer Goldmedaille, drei Silbermedaillen und zwei Bronzemedaillen aus.</p>
+  </div>
+  <div class="medals" role="img" aria-label="Eine Goldmedaille, drei Silbermedaillen und zwei Bronzemedaillen">
+    <div class="m-group gold">
+      <div class="m-stack"><svg class="medal" style="--i:0" viewBox="0 0 120 172"><use href="#medal"/></svg></div>
+      <p><b>1</b>Gold</p>
+    </div>
+    <div class="m-group silber">
+      <div class="m-stack"><svg class="medal" style="--i:1" viewBox="0 0 120 172"><use href="#medal"/></svg><svg class="medal" style="--i:2" viewBox="0 0 120 172"><use href="#medal"/></svg><svg class="medal" style="--i:3" viewBox="0 0 120 172"><use href="#medal"/></svg></div>
+      <p><b>3</b>Silber</p>
+    </div>
+    <div class="m-group bronze">
+      <div class="m-stack"><svg class="medal" style="--i:4" viewBox="0 0 120 172"><use href="#medal"/></svg><svg class="medal" style="--i:5" viewBox="0 0 120 172"><use href="#medal"/></svg></div>
+      <p><b>2</b>Bronze</p>
+    </div>
+  </div>
+  <p class="note"><b>Entwurfsnotiz:</b> Die Medaillen sind hier eine Illustration. Fotos der echten Medaillen oder Urkunden wären an dieser Stelle ideal.</p>
 </section>
 
 <!-- KONTAKT -->
@@ -292,11 +292,11 @@
       <fieldset>
         <legend>Bereich</legend>
         <div class="chips" id="topics">
-          <label><input type="checkbox" name="bereich" value="Naturstein &amp; Pflaster"><span>Naturstein &amp; Pflaster</span></label>
-          <label><input type="checkbox" name="bereich" value="Gärten &amp; Grünanlagen"><span>Gärten &amp; Grünanlagen</span></label>
-          <label><input type="checkbox" name="bereich" value="Wasser im Garten"><span>Wasser im Garten</span></label>
-          <label><input type="checkbox" name="bereich" value="Spiel &amp; Sport"><span>Spiel &amp; Sport</span></label>
-          <label><input type="checkbox" name="bereich" value="Erd- &amp; Tiefbau"><span>Erd- &amp; Tiefbau</span></label>
+          <label><input type="checkbox" name="bereich" value="stein"><span>Naturstein &amp; Pflaster</span></label>
+          <label><input type="checkbox" name="bereich" value="garten"><span>Gärten &amp; Grünanlagen</span></label>
+          <label><input type="checkbox" name="bereich" value="wasser"><span>Wasser im Garten</span></label>
+          <label><input type="checkbox" name="bereich" value="spiel"><span>Spiel &amp; Sport</span></label>
+          <label><input type="checkbox" name="bereich" value="erde"><span>Erd- &amp; Tiefbau</span></label>
         </div>
       </fieldset>
       <label>Ort des Grundstücks<input type="text" name="ort" placeholder="z. B. Ochtrup"></label>
@@ -309,9 +309,7 @@
 </main>
 
 <footer class="foot">
-  <div class="foot-brand">
-    <svg class="foot-logo" role="img" aria-label="Josef Hundehege GmbH &amp; Co. KG"><use href="#logo"/></svg>
-  </div>
+  <div class="foot-brand"><img class="foot-logo" src="brand/logo-hell-720.png" width="720" height="256" alt="Josef Hundehege GmbH &amp; Co. KG" loading="lazy"></div>
   <address class="foot-addr">
     Josef Hundehege GmbH &amp; Co. KG<br>
     Bökerhook 12, 48607 Ochtrup<br>
@@ -323,6 +321,31 @@
   </nav>
   <p class="foot-draft"><b>Unverbindlicher Entwurf.</b> Diese Seite ist ein Gestaltungsvorschlag von Leon Oßendorf, Ochtrup, und nicht mit der Josef Hundehege GmbH &amp; Co. KG abgestimmt. Texte und Fotos stammen von hundehege.com und aus der öffentlichen Ausbildungsanzeige (Stand Oktober 2026). Formulare verschicken nichts. Kontakt zum Entwurf: 01522 9679135 · leon.ossendorf@gmail.com</p>
 </footer>
+
+<!-- Projektansicht eines Leistungsbereichs -->
+<dialog class="pv" id="pv" aria-labelledby="pv-title">
+  <div class="pv-media">
+    <div class="pv-frame">
+      <img class="pv-img is-on" alt="">
+      <img class="pv-img" alt="" aria-hidden="true">
+      <button class="pv-nav pv-prev" type="button" aria-label="Vorheriges Foto"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M13 4l-6 6 6 6"/></svg></button>
+      <button class="pv-nav pv-next" type="button" aria-label="Nächstes Foto"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7 4l6 6-6 6"/></svg></button>
+      <p class="pv-count" aria-live="polite"></p>
+    </div>
+    <div class="pv-thumbs" role="group" aria-label="Fotos dieses Bereichs"></div>
+  </div>
+  <div class="pv-info">
+    <form method="dialog" class="pv-closeform"><button class="pv-close" aria-label="Projektansicht schließen"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15"/></svg></button></form>
+    <h3 id="pv-title"></h3>
+    <p class="pv-text"></p>
+    <ul class="pv-tags"></ul>
+    <p class="pv-cap"></p>
+    <div class="pv-actions">
+      <a class="btn" href="#kontakt" id="pv-talk">Projekt besprechen</a>
+    </div>
+    <button class="pv-nextarea" type="button" id="pv-nextarea"><span>Nächster Bereich</span><b></b></button>
+  </div>
+</dialog>
 
 <!-- Entwurfs-Hinweis -->
 <div class="draft" id="draft">
