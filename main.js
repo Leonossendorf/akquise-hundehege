@@ -130,12 +130,14 @@ function activate(area, { toggle = false } = {}) {
   }
 }
 
+// nach einem Sprung aus dem Hero: Bereich nicht sofort durch den Mauszeiger wechseln
+let hoverLock = 0;
 items.forEach((it) => {
   const btn = $('.lz-btn', it);
   let t;
   btn.addEventListener('click', () => activate(it.dataset.area, { toggle: true }));
   btn.addEventListener('mouseenter', () => {
-    if (!mqHover.matches || !mqWide.matches) return;
+    if (!mqHover.matches || !mqWide.matches || Date.now() < hoverLock) return;
     t = setTimeout(() => activate(it.dataset.area), 110);
   });
   btn.addEventListener('mouseleave', () => clearTimeout(t));
@@ -147,6 +149,7 @@ activate('stein');
 // Einstiege aus dem Hero und andere Links auf einen Bereich
 $$('a[data-area]').forEach((a) => a.addEventListener('click', (e) => {
   e.preventDefault();
+  hoverLock = Date.now() + 1600;
   const list = $('.lz-list');
   list.classList.add('no-anim');
   activate(a.dataset.area);
